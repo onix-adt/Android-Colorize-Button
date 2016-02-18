@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ColorizeButton</string>
+    <string name="all_exmp_text_one">THE DEFAULT, WITHOUT SPECIFYING COLORS, WITHOUT \'SCALETYPE\', WITH BACKGROUND</string>
+    <string name="all_exmp_text_two">WITH SPECIFYING COLORS AND \'SCALETYPE\', WITH BACKGROUND</string>
+    <string name="all_exmp_text_three">WITHOUT BACKGROUND, WITH SCALETYPE=\'CENTERINSID\'</string>
+    <string name="all_exmp_text_four">WITHOUT BACKGROUND, WITH SCALETYPE = \'CENTERCROP\'</string>
+    <string name="all_exmp_text_five">WITH FOCUSED</string>
+    <string name="frgm_title_text_all_example">CHOOSE \'state_normal\' COLOR</string>
+    <string name="frgm_title_text_example_focusable">EXAMPLE FOCUSABLE</string>
+    <string name="frgm_title_text_example_lick">EXAMPLE CLICK</string>
+    <string name="home_title_text"><![CDATA[<font color=\"#ff5623\">Colorize</font> <font color=\"#3db09e\">Button </font>]]></string>
+    <string name="home_title_text_click"><![CDATA[<font color=\"#3db09e\">Colorize</font> <font color=\"#ff5623\">Button </font>]]></string>
+</resources>

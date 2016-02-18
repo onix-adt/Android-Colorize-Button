@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ColorizeButton</string>
+
+    <string name="err_forgot_pressed_color">PressedColor not defined</string>
+    <string name="err_forgot_normal_color">NormalColor not defined</string>
+    <string name="err_forgot_disable_color">DisableColor not defined</string>
+    <string name="err_forgot_focused_color">FocusedColor not defined</string>
+    <string name="err_set_src">Error, set src! : \"null object\"</string>
+    <string name="err_type_of_resource">type of resource that should be \"BitmapDrawable\"</string>
+
+    <string name="successful">The operation successful</string>
+    <string name="out_of_memory_error">Picture is very big \"OutOfMemoryError\"</string>
+
+</resources>

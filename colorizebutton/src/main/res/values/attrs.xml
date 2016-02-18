@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="state">
+        <attr name="state_pressed" format="color"/>
+        <attr name="state_normal" format="color"/>
+        <attr name="state_disable" format="color"/>
+        <attr name="state_focused" format="color"/>
+    </declare-styleable>
+</resources>

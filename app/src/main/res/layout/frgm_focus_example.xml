@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:colorize="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/frgm_title_text_example_focusable"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <com.onix.control.ColorizeButton
+                    android:id="@+id/default_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:nextFocusLeft="@+id/without_background_btn"
+                    android:nextFocusRight="@+id/with_background_btn"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gitar_test"
+                    colorize:state_focused="@color/pink" />
+
+                <com.onix.control.ColorizeButton
+                    android:id="@+id/with_background_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:nextFocusLeft="@+id/default_btn"
+                    android:nextFocusRight="@+id/without_background_btn"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gitar_test"
+                    colorize:state_focused="@color/pink" />
+
+                <com.onix.control.ColorizeButton
+                    android:id="@+id/without_background_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:nextFocusLeft="@+id/with_background_btn"
+                    android:nextFocusRight="@+id/default_btn"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gitar_test"
+                    colorize:state_focused="@color/pink" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.onix.control.ColorizeButton
+                    android:id="@+id/btn_prev"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/prev"
+                    colorize:state_normal="@android:color/white"
+                    colorize:state_pressed="@color/blue_grey" />
+
+                <com.onix.control.ColorizeButton
+                    android:id="@+id/btn_redo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/redo"
+                    colorize:state_normal="@android:color/white"
+                    colorize:state_pressed="@color/blue_grey" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

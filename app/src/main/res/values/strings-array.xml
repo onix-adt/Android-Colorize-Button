@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_menu_items">
+        <item> - click example</item>
+        <item> - focusable example</item>
+        <item> - all example</item>
+        <item> - speed test</item>
+    </string-array>
+</resources>

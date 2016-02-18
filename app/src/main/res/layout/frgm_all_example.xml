@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:colorize="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/my_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/palette_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/frgm_title_text_all_example"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/paint_colors_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/colorOne"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#374047"
+                        android:tag="#374047" />
+
+                    <ImageButton
+                        android:id="@+id/colorTwo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#f44337"
+                        android:tag="#f44337" />
+
+                    <ImageButton
+                        android:id="@+id/colorThree"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#03bbd4"
+                        android:tag="#03bbd4" />
+
+                    <ImageButton
+                        android:id="@+id/colorFour"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#3f51b4"
+                        android:tag="#3f51b4" />
+
+                    <ImageButton
+                        android:id="@+id/colorFive"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#ffe93c"
+                        android:tag="#ffe93c" />
+
+                    <ImageButton
+                        android:id="@+id/colorSix"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#e91f63"
+                        android:tag="#e91f63" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/paint_colors_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/colorSeven"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFFFF"
+                        android:tag="#FFFFFFFF" />
+
+                    <ImageButton
+                        android:id="@+id/colorEach"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#7a564a"
+                        android:tag="#7a564a" />
+
+                    <ImageButton
+                        android:id="@+id/colorNine"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#4caf50"
+                        android:tag="#4caf50" />
+
+                    <ImageButton
+                        android:id="@+id/colorTen"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#039688"
+                        android:tag="#039688" />
+
+                    <ImageButton
+                        android:id="@+id/colorEleven"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#ff5623"
+                        android:tag="#ff5623" />
+
+                    <ImageButton
+                        android:id="@+id/colorTwelve"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="#683ab6"
+                        android:tag="#683ab6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary">
+
+                    <com.onix.control.ColorizeButton
+                        android:id="@+id/default_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_guitar_white_48dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/all_exmp_text_one"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary">
+
+                    <com.onix.control.ColorizeButton
+                        android:id="@+id/with_background_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_apple_mobileme"
+                        colorize:state_normal="@color/red"
+                        colorize:state_pressed="@color/lime" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/all_exmp_text_two"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary">
+
+                    <com.onix.control.ColorizeButton
+                        android:id="@+id/without_background_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_cat_white_48dp"
+                        colorize:state_normal="@color/blue_grey"
+                        colorize:state_pressed="@color/pink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/all_exmp_text_three"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary">
+
+                    <com.onix.control.ColorizeButton
+                        android:id="@+id/with_scaletype_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_airballoon_white_48dp"
+                        android:scaleType="centerCrop"
+                        colorize:state_normal="@color/blue_grey"
+                        colorize:state_pressed="@color/green" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/all_exmp_text_four"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/colorPrimary">
+
+                    <com.onix.control.ColorizeButton
+                        android:id="@+id/with_focused_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/transparent"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/bird_test"
+                        colorize:state_focused="@color/pink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/all_exmp_text_five"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
